@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Barberia-Alura</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="reset.css">
+    <link rel='stylesheet' href='style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <script src='main.js'></script>
+</head>
+<body>
+
+     <!-- La etiqueta header es una etiqueta de contenido de HTML que nos permite crear el encabezado de nuestra página web. -->
+     <header>
+
+        <div class="caja">
+            <h1>
+            <img src="imagenes/logo.png">
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="productos.html">Productos</a> </li>
+                    <li><a href="contacto.html">Contacto</a> </li>
+                </ul>
+            </nav>
+        </div>
+
+     </header>
+
+    <!-- los identidicadores o id solo se pueden usar solo 1 sola vez las clases no -->
+
+    <img class="banner" src="banner/banner.jpg">
+
+    <!-- La etiqueta div es la etiqueta específica para dividir el contenido en bloques, 
+    ayuda en la organización y estructuración de nuestro HTML.-->
+    <main>
+        <section class="principal">
+
+            <h2 class="titulo-principal">La Barbería Alura</h2>
+
+            <img class="utensilios" src="imagenes/utensilios.jpg" alt="Utensilios de un barbero">
+
+            <p>En el corazón de la ciudad, la <strong> Barbería Alura</strong> trae para el mercado lo que hay 
+            de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en 
+            la ciudad y conquista nuevos clientes diariamente. </p> 
+
+            <p id="mision"><em> Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em> </p>
+
+            <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios 
+            y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. 
+            El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+
+        </section>
+
+        <section class="mapa">
+            <h3 class="titulo-principal">Nuestra Ubicacion</h3>
+            <p>Nuestro establecimiento esta ubicado en el corazon de la ciudad.</p>
+
+            <div class="mapa-contenido">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1125.128622585855!2d-97.39116744076505!3d18.46251669375939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1675142235512!5m2!1ses-419!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+           
+        </section>
+
+        <section class="diferenciales">
+
+            <h3 class="titulo-principal">Diferenciales</h3>
+            <!-- las clases o class a diferencia de los id, se pueden reutilizar -->
+            <div class="contenido-diferenciales">
+                <ul class="lista-diferenciales">
+                    <li class="item">Atencion personalizadda a los clientes</li>
+                    <li class="item">Espacio diferenciado</li>
+                    <li class="item">Localizacion</li>
+                    <li class="item">Puntualidad</li>
+                    <li class="item">Limpieza</li>
+                </ul><img src="diferenciales/diferenciales.jpg" 
+                class="imagenDiferenciales">
+                <!-- la etiqueta img se pone asi para que tenga la separacion correcta en display: in-block -->
+                
+            </div>
+            <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        
+        <section>
+        
+        
+    </main>
+
+    <footer>
+        <img src="imagenes/logo-blanco.png">
+        <!-- &copy es un caracter especial para el copyright y se encuentran el unicode-->
+        <p class="copyright">&copy Copyright Barberia Alura - 2020</p>  
+    </footer>
+    
+
+</body>
+</html>
+
+ 
