@@ -47,9 +47,12 @@ nav a:hover{ /*hover es para cuando pase el puntero del mause cambie de color*/
     display: inline-block;/*para poder ajustar el tamaño*/
     text-align: center;/*para que los titulos queden centrados*/
     width: 30%;/*para que queden mejro distribuidos*/
+    min-width: 285px;/*para que el responsivo quede mejor, ua que sino se pone queda feo*/
     vertical-align: top;
     /*background-color: #cccccc; para saber como estan ubicadas las imagenes*/
     margin: 0 1.3%;
+    margin-top: 10px;/*es para que almomento de responsive no esten juntos los elementos*/
+    margin-bottom: 10px;/*es para que almomento de responsive no esten juntos los elementos*/
     padding: 30px 20px;/*Cuando declaro que existe un espaciamiento interno, estoy aumentando el contenido.*/
     box-sizing: border-box;/*para corregir el espaciado de las imagenes*/
     /*border-color: black;
@@ -236,6 +239,8 @@ td, th{
 
 .imagenDiferenciales{
     width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;
 }
 
 .video{
@@ -243,3 +248,22 @@ td, th{
     margin: 1em auto;
 
 }
+
+@media screen and (max-width: 480px){
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video, .productos{
+        width: auto;
+    }
+
+    .lista-diferenciales, .imagenDiferenciales{
+        width: 100%;
+    }
+
+}    
