@@ -103,7 +103,20 @@ footer{
 
 
 form{
-    margin: 40px 0;
+    margin: auto;
+    /* margin-left: 10px; */
+    width: 450px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+form textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
 }
 
 form label, form legend{
@@ -112,11 +125,13 @@ form label, form legend{
     margin: 0 0 10px;
 }
 
-.input-padron{
+.input-padron, textarea{
     display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
+    margin-bottom: 20px;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
 }
 
 .checkbox{
@@ -124,7 +139,7 @@ form label, form legend{
 }
 
 .enviar{
-    width: 40%;
+    width: 100%;
     padding: 15px 0;
     font-size: 18px;
     font-weight: bold;
@@ -262,7 +277,7 @@ td, th{
         width: auto;
     }
 
-    .lista-diferenciales, .imagenDiferenciales{
+    .lista-diferenciales, .imagenDiferenciales, form{
         width: 100%;
     }
 
